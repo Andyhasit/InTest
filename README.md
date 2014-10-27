@@ -64,12 +64,16 @@ For every method it finds, it instantiates the defining class and calls the meth
 
 ##Contributing
 
-Could do with translations into other languages:
+See limitations above.
+
+Could also do with translations into other languages:
  - C#
  - VB
- - IronPyhon (likely to be identical) 
+ - IronPython (likely to be identical) 
 
 I'd prefer to keep them all in the same repo rather than a separate one for each, but fork if you feel like it.
+
+I'm also looking for a way to remove methods starting with __Test__ as part of the compile step, I'm sure this is something the [Boo Compiler](https://github.com/bamboo/boo/wiki/Boo-Compiler) could handle.
 
 ##Summary
 
