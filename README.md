@@ -7,6 +7,8 @@ A tiny test framework for productive developers
 
 __InTest__ lets you write unit tests anywhere in your code, even __inside__ your logic classes, without the need to import additional references, use decorators, or set up an extra project to house your tests.
 
+It runs on a mere 30 lines of code, currently in [Boo](https://github.com/bamboo/boo) only (translations to other languages welcome, .Net or otherwise), and that's all it needs!
+
 ##Why is this useful?
 
 __1 - A separate unit test project creates extra work.__
@@ -22,7 +24,6 @@ __3 - Use TDD to develop private methods too__
 TDD purists say you should only test public interfaces, and most frameworks are built on that premise. But what if you want some of the benefits of TDD (faster run-test-change iteration, documentation by test, and bug catching) for your private methods too?
 
 Being able to see and control private members also means less jumping through hoops to set up tests.
-
 
 __5 - Better creative flow__
 
