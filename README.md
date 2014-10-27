@@ -7,7 +7,7 @@ A tiny test framework for productive developers
 
 __InTest__ lets you write unit tests anywhere in your code, even __inside__ your logic classes, without the need to import additional references, use decorators, or set up an extra project to house your tests.
 
-#####Why is this useful?
+##Why is this useful?
 
 __1 - A separate unit test project creates extra work.__
 
@@ -30,7 +30,7 @@ Designing usually means coming up with an idea, part-implementing it, finding ou
 
 Having to worry about unit tests in some distant files, or worse, insisting that the unit tests are written first just kills the creative flow.
 
-#####But I don't want my code bloated with tests!
+##But I don't want my code bloated with tests!
 
 So long as you stick to one class per file and your classes are relatively small (which they generally are if you follow the [single responsibility principle](http://en.wikipedia.org/wiki/Single_responsibility_principle)) and put your test code at the bottom, this shouldn't really be a problem.
 
@@ -38,7 +38,7 @@ Besdies, you don't __have__ to write the test methods inside your classes, you c
 
 I'm also working on a way to strip test methods during compilation for production code.
 
-#####OK, I'm sold, how do I use it?
+##OK, so how do I use it?
 
 1 - Copy the source file into your project (There's only [Boo](https://github.com/bamboo/boo) so far, but it's only 30 lines and can easily be translated to VB or C#, anyone?)
 
@@ -55,15 +55,14 @@ __RunTests()__ will look for any instance or class method that starts with __"Te
 
 For every method it finds, it instantiates the defining class and calls the method with no arguments. A test fails, if it raises an exception, else it is deemed a pass.
 
-
-#####Limitations
+##Limitations
 
 1. Any setup or teardown functionality will have to be called explicitly in your test method, which I prefer anyway as it makes it clearer what's going on.
 2. There's no feature to run individual tests yet, you have to do them all.
 3. It uses FormatterServices.GetUninitializedObject() which means any code in your constructor might not run.
 4. There is no equivalent of Assert.Throws(). You need to do this yourself.
 
-#####Contributing
+##Contributing
 
 Could do with translations into other languages:
  - C#
@@ -72,7 +71,7 @@ Could do with translations into other languages:
 
 I'd prefer to keep them all in the same repo rather than a separate one for each, but fork if you feel like it.
 
-#####Summary
+##Summary
 
 I know this is a big README for something that's less than 30 lines of code, but it just goes to show that small can be powerful.
 
