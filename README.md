@@ -7,7 +7,7 @@ A tiny test framework for productive developers
 
 __InTest__ lets you write unit tests anywhere in your code, even __inside__ your logic classes, without the need to import additional references, use decorators, or set up an extra project to house your tests.
 
-It runs on a mere 30 lines of code, currently in [Boo](https://github.com/bamboo/boo) only (translations to other languages welcome, .Net or otherwise), and that's all it needs!
+It runs on a mere 30 lines of code, currently in [Boo](https://github.com/bamboo/boo) only (translations to other languages welcome .Net or otherwise) and that's all it needs!
 
 ##Why is this useful?
 
